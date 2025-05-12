@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Добро пожаловать на сайт</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Сброс отступов */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 600px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #2b6cb0;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #4a5568;
+      margin-bottom: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #718096;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Добро пожаловать!</h1>
+    <p>Это современная, стильная страница с подключённым виджетом чата от Sardors AI company.</p>
+    <p>Попробуй написать в чат — он находится внизу справа.</p>
+  </div>
+
+  <footer>© 2025 Все права защищены.</footer>
+
+  <!-- Вставка виджета Jed -->
+  <script 
+    id="jed-chat-widget" 
+    data-app-key="b9031b54e450f939d21200b1f114e1ea" 
+    async 
+    src="https://app.myjedai.ru/widget/jedwidget.js">
+  </script>
+
+</body>
+</html>
